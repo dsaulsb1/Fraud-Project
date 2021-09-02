@@ -1,6 +1,9 @@
-# Fraud-or-Telecom
-Repository for Group Project Segment 1
+# Fraud
 
-## Description of communication protocols
+## Communication protocols
+
+- We created a Slack Group Chat in order to collaborate quickly and efficiently.
+
+## Project Description:
 
 
