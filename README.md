@@ -1,4 +1,4 @@
-# Fraud-or-Telecom
+# Fraud
 Repository for Group Project Segment 1
 
 ## Description of communication protocols
