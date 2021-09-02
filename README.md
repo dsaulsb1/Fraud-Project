@@ -1,6 +1,9 @@
 # Fraud
-Repository for Group Project Segment 1
 
-## Description of communication protocols
+## Communication protocols
 
-### Slack Group Chat created (file sharing, etc)
+- We created a Slack Group Chat in order to collaborate quickly and efficiently.
+
+## Project Description:
+
+
