@@ -1,5 +1,4 @@
 ## Credit Card Fraud Detection
-Repository for Group Project Segment 1
 ### Overview
 The Annual Data Book compiled by the Federal Trade Commission reports that Credit card fraud accounted for 393,207 of the nearly 1.4 million reports of identity theft in 2020. This makes credit card fraud the second most common type of identity theft reported, behind only government documents and benefits fraud for that year. Some surveys suggest that a typical organization loses 5% of their yearly revenues to fraud. These numbers can only increase since the number of non-cash transactions increases provides more opportunities for credit card fraud.
 
@@ -83,6 +82,6 @@ PgAdmin Database to store our dataset and some intermediate results
 ##### Data Cleaning and Analysis
 This project will utilize Jupyter notebook and the pandas library to perform data cleaning and analysis
 
-## Description of communication protocols
+### Description of communication protocols
 
 
