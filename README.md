@@ -84,4 +84,6 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Description of communication protocols
 
-
+1. Comminucation for this project will be via a Slack Group Chat.
+2. Every team member will work in their individual branches and create a pull request which will collectively approved in the slack group chat before a designated member approves the pull request in GitHub
+3. The designated team member will then create a request to push changes to the main branch
