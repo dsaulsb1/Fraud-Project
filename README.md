@@ -80,6 +80,8 @@ PgAdmin Database to store our dataset and some intermediate results
 4.	Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
 5.	S3 bucket where data is located, and database connection details can be found in the Jupyter Notebook
 
+##### Data Cleaning and Analysis
+This project will utilize Jupyter notebook and the pandas library to perform data cleaning and analysis
 
 ## Description of communication protocols
 
