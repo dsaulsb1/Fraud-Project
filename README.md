@@ -78,9 +78,10 @@ PgAdmin Database to store our dataset and some intermediate results
 ##### Database Approach
 1.	Load raw dataset into AWS S3 bucket/PgAdmin
 2.	Connect to AWS S3 bucket/PgAdmin and read data into Pandas
-3.	Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin
-4.	Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
-5.	S3 bucket where data is located, and database connection details can be found in the Jupyter Notebook
+3.	Load the raw data into a PgAdmin Database Instance located in AWS
+4.	Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin
+5.	Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
+6.	S3 bucket where data is located, and database connection details can be found in the Jupyter Notebook
 
 ##### Data Cleaning and Analysis
 This project will utilize Jupyter notebook and the pandas library to perform data cleaning and analysis
