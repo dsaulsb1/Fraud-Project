@@ -21,24 +21,24 @@ Feature ‘Time’ contains the seconds elapsed between each transaction and the
 The is an imbalanced dataset. The imbalance between classes is compensated using oversampling and under sampling. The logistic regression, random forest, support vector machine, k-means are used within a cross-validation framework. Lastly, recall and accuracy are considered as metrics while choosing the best classifier.
 
 ### Control Flow
-1.	Understanding the problem
-2.	Importing required libraries and understanding their use
-3.	Importing data and learning its structure
-4.	Performing basic EDA
-5.	Scaling different variables
-6.	Outlier treatment
-7.	Building basic Classification model with Random Forest
-8.	Nearmiss technique for under sampling data
-9.	SMOTE for oversampling data
-10.	cross validation in the context of under sampling and oversampling
-11.	Pipelining with sklearn/imblearn
-12.	Applying Linear model: Logistic Regression
-13.	Applying Ensemble technique: Random Forest
-14.	Applying Non-Linear Algorithms: Support Vector Machine, Decision Tree, and k-Nearest Neighbor
-15.	Making predictions on test set and computing validation metrics
-16.	ROC curve and Learning curve
-17.	Comparison of results and Model Selection
-18.	Visualization with seaborn and matplotlib
+      1.	Understanding the problem
+      2.	Importing required libraries and understanding their use
+      3.	Importing data and learning its structure
+      4.	Performing basic EDA
+      5.	Scaling different variables
+      6.	Outlier treatment
+      7.	Building basic Classification model with Random Forest
+      8.	Nearmiss technique for under sampling data
+      9.	SMOTE for oversampling data
+      10.	cross validation in the context of under sampling and oversampling
+      11.	Pipelining with sklearn/imblearn
+      12.	Applying Linear model: Logistic Regression
+      13.	Applying Ensemble technique: Random Forest
+      14.	Applying Non-Linear Algorithms: Support Vector Machine, Decision Tree, and k-Nearest Neighbor
+      15.	Making predictions on test set and computing validation metrics
+      16.	ROC curve and Learning curve
+      17.	Comparison of results and Model Selection
+      18.	Visualization with seaborn and matplotlib
 
 #### Solution Workflow
 ![Solution Workflow](https://user-images.githubusercontent.com/67847583/132079416-dbd29ad6-69fd-476b-9138-61d178773ba8.jpg)
