@@ -2,6 +2,7 @@
 Repository for Group Project Segment 1
 
 ## Description of communication protocols:
+We created a slack group messaging where it allows us to communicate with each other when needed. We also shared our email addresses to be able to add the appropriate team to the github reposository and having access to each other emails allow us to communicate when we do not have slack available.
 
 # Technologies Used:
 
