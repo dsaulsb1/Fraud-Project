@@ -1,3 +1,5 @@
+==========
+
 ## Credit Card Fraud Detection
 ### Overview
 The Annual Data Book compiled by the Federal Trade Commission reports that Credit card fraud accounted for 393,207 of the nearly 1.4 million reports of identity theft in 2020. This makes credit card fraud the second most common type of identity theft reported, behind only government documents and benefits fraud for that year. Some surveys suggest that a typical organization loses 5% of their yearly revenues to fraud. These numbers can only increase since the number of non-cash transactions increases provides more opportunities for credit card fraud.
@@ -20,6 +22,8 @@ Feature ‘Time’ contains the seconds elapsed between each transaction and the
 
 The is an imbalanced dataset. The imbalance between classes is compensated using oversampling and under sampling. The logistic regression, random forest, support vector machine, k-means are used within a cross-validation framework. Lastly, recall and accuracy are considered as metrics while choosing the best classifier.
 
+==========
+
 ### Control Flow
       1.	Understanding the problem
       2.	Importing required libraries and understanding their use
@@ -40,6 +44,8 @@ The is an imbalanced dataset. The imbalance between classes is compensated using
       17.	Comparison of results and Model Selection
       18.	Visualization with seaborn and matplotlib
 
+==========
+
 #### Solution Workflow
 ![Solution Workflow](https://user-images.githubusercontent.com/67847583/132079416-dbd29ad6-69fd-476b-9138-61d178773ba8.jpg)
 
@@ -51,6 +57,8 @@ Logistic regression is a classification algorithm used to find the probability o
       2.	It makes no assumptions about distributions of classes in feature space.
       3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association (positive or negative).
       4.	Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
+==========
+
 ##### Random Forest
 Random forest is a technique used in modeling predictions and behavior analysis and is built on decision trees. It contains many decision trees representing a distinct instance of the classification of data input into the random forest. The random forest technique considers the instances individually, taking the one with most votes as the selected prediction.
 ##### Why Random Forest
@@ -59,6 +67,8 @@ Random forest is a technique used in modeling predictions and behavior analysis 
       3.	It works well with both categorical and continuous values
       4.	It automates missing values present in the data
       5.	Normalizing of data is not required as it uses a rule-based approach.
+==========
+
 ##### SVM
 While SVMs do a good job recognizing speech, face, and images, they also do a good job at pattern recognition. Pattern recognition aims to classify data based on either a priori knowledge or statistical information extracted from raw data, which is a powerful tool in data separation in many disciplines.
 ##### Why SVM
@@ -66,6 +76,9 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
       2.	SVM is effective in high dimensional spaces.
       3.	SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
       4.	SVM is relatively memory efficient
+
+==========
+
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
@@ -74,6 +87,9 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
       3.	K-means is suitable for many datasets, and it’s computed much faster than the smaller dataset. It can also produce higher clusters.
       4.	The results are easy to interpret. It generates cluster descriptions in a form minimized to ease understanding of the data.
       5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
+
+==========
+
 PgAdmin Database to store our dataset and some intermediate results
 ##### Database Approach
       1.	Load raw dataset into AWS S3 bucket/PgAdmin
@@ -86,6 +102,8 @@ PgAdmin Database to store our dataset and some intermediate results
 
 ##### Data Cleaning and Analysis
 This project will utilize Jupyter notebook and the pandas library to perform data cleaning and analysis
+
+==========
 
 ### Description of communication protocols
     1. Comminucation for this project will be via a Slack Group Chat.
