@@ -95,4 +95,4 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Results
 ##### Dashboard
-https://public.tableau.com/shared/SPWRM55MM?:display_count=n&:origin=viz_share_link
+[link to dashboard](https://public.tableau.com/shared/SPWRM55MM?:display_count=n&:origin=viz_share_link "link to dashboard") 
