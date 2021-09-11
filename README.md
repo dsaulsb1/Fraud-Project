@@ -94,5 +94,28 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 
 ### Results
+#### Exploratory Data Analysis
+1. Images of pie chart
+2. Images of Distribution of Time and Amount
+3. Images of Distplot of all features
+#### Naive Model Results
+1. Results of naive logistic regression
+2. Results of naive random forest regression
+#### Undersampling Model Results
+1. Undersampling Summary Results
+2. Undersampling ROC Curve
+3. Undersampling Learning Curve
+#### Oversampling Model Results
+1. Oversampling Summary Results
+2. Oversampling ROC Curve
+3. Oversampling Learning Curve
 ##### Dashboard
 [link to dashboard](https://public.tableau.com/shared/SPWRM55MM?:display_count=n&:origin=viz_share_link "link to dashboard") 
+
+
+### Summary
+1. Describe the dataset
+2. Describe the initial attempt of the naive models
+3. Describe the results of the undersampling and oversampling
+4. Describe the ROC curves and the learning curves
+5. Choose the best model
