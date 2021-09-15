@@ -125,8 +125,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
-      1. Results of naive logistic regression
-      2. Results of naive random forest regression
+      1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent transactions. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric
+      2. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. We would need a better understanding of the dataset to determine the best way to improve the recall metric
+      
+###### Naive Model Results
+![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
+
 #### Undersampling Model Results
       1. Undersampling Summary Results
       2. Undersampling ROC Curve
