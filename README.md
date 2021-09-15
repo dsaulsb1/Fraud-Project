@@ -118,7 +118,7 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       2. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
       3. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
  ###### Univariate Analysis     
-![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525431-f72cdbbc-08cd-406f-b0c9-469321a56a27.png)
+![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
 ![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
 
 ###### Bivariate Analysis
