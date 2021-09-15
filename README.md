@@ -134,9 +134,15 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
 
 #### Undersampling Model Results
-      1. Undersampling Summary Results
-      2. Undersampling ROC Curve
+      1. By Undersampling our the majority class in our dataset, all classifiers achieved a recall scores greater than 85% with ethe exception of the Support vector classifier.
+      2. The ROC Curve show that the Support Vector Classifier has the largest area under the curve
       3. Undersampling Learning Curve
+      
+###### Undersampling Results
+![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133528075-7bde9aaf-b8a4-406f-9beb-b380112fc004.png)
+![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528096-9d818441-8da0-40fc-aed3-076195b2e5b9.png)
+![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528102-9d74ac6d-44a0-4bc8-aafe-9c63fc55214c.png)
+
 #### Oversampling Model Results
       1. Oversampling Summary Results
       2. Oversampling ROC Curve
