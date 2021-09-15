@@ -113,9 +113,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Results
 #### Exploratory Data Analysis
-      1. Images of pie chart
-      2. Images of Distribution of Time and Amount
-      3. Images of Distplot of all features
+##### Univariate Analysis:
+      1. Univariate plots show that the dataset is highly imbalanced. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
+      ![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525381-d23f8e9c-2309-4dc6-b6cf-c09b458daeb6.png)
+      2. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
+      3. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
+      
 #### Naive Model Results
       1. Results of naive logistic regression
       2. Results of naive random forest regression
