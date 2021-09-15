@@ -134,8 +134,8 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
 
 #### Undersampling Model Results
-      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 
-      85% with the exception of the Support vector classifier.
+      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
+      Support vector classifier.
       2. The ROC Curve show that the Support Vector Classifier has the largest area under the curve
       3. Undersampling Learning Curve
       
