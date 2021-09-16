@@ -159,9 +159,28 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 
 ### Summary
-      1. Describe the dataset
-      2. Describe the initial attempt of the naive models
-      3. Describe the results of the undersampling and oversampling
-      4. Describe the ROC curves and the learning curves
-      5. Choose the best model
+##### The Dataset
+      * The dataset used for this project has 284807 rows of credit card transactions. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset with only 0.17% of all transaction being fraud.
+      * While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features. 
+##### Naive Models
+      * While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, both classifiers only managed recall scores of 62% and 77% respectively. 
+      * This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an orgamnization alot of money.
+
+##### Performance Metric
+      * Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal. 
+      * To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of True Positives and False Positives
+
+##### Oversampling, Undersampling, ROC, and Learning Curve
+      * To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
+      * While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1 
+      * Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
+      
+##### Best Model
+To choose the best model, we may consider the following factors:
+1. Size of the dataset
+2. Recall score
+3. ROC
+4. Model training time
+5. Optimal number of cross-vlidation folds that will result in a good fit
 #### Recommendation
+
