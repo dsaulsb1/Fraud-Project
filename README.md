@@ -197,5 +197,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       3. ROC
       4. Model training time
       5. Optimal number of cross-vlidation folds that will result in a good fit
-#### Recommendation
+#### Recommendations
+One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores. 
+* One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 30% faster than the RandomizedGridSearchCV.
+* We may also explore using an online environment that has unlimited computation resources that can handle the resource requirements for memory and CPU intensive models and processes.
+Since feature extraction had been done on he dataset, visualizing potetially interesting relationships was not possible with this dataset
 
