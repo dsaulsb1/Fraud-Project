@@ -164,3 +164,4 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       3. Describe the results of the undersampling and oversampling
       4. Describe the ROC curves and the learning curves
       5. Choose the best model
+#### Recommendation
