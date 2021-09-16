@@ -55,7 +55,8 @@ Logistic regression is a classification algorithm used to find the probability o
 ##### Why Logistic Regression
       1.	Logistic regression is easier to implement, interpret, and very efficient to train.
       2.	It makes no assumptions about distributions of classes in feature space.
-      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association (positive or negative).
+      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its 
+      direction of association (positive or negative).
       4.	Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
 ==========
 
@@ -83,7 +84,8 @@ K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
       1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. The results are presented in an easy and simple manner.
-      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow changes to easily occur on the algorithm.
+      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will 
+      allow changes to easily occur on the algorithm.
       3.	K-means is suitable for many datasets, and it’s computed much faster than the smaller dataset. It can also produce higher clusters.
       4.	The results are easy to interpret. It generates cluster descriptions in a form minimized to ease understanding of the data.
       5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
@@ -162,21 +164,23 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ##### The Dataset
       1 The dataset used for this project has 284807 rows of credit card transactions. Exploratory data analysis reveal as expected that we have a 
       highly imbalanced dataset with only 0.17% of all transaction being fraud.
-      2 While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features. 
+      2 While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the 
+      genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features. 
 ##### Naive Models
-      * While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
+      1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
       both classifiers only managed recall scores of 62% and 77% respectively. 
-      * This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an orgamnization alot of money.
+      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an orgamnization alot of money.
 
 ##### Performance Metric
-      * Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal. 
-      * To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of 
+      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, 
+      measuring model performance with the accuracy metric will not be ideal. 
+      2. To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of 
       True Positives and False Positives
 
 ##### Oversampling, Undersampling, ROC, and Learning Curve
-      * To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
-      * While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1 
-      * Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the 
+      1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
+      2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1 
+      3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the 
       logistic regression have near perfect without overfitting.
       
 ##### Best Model
