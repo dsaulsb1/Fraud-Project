@@ -148,6 +148,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       1. Oversampling Summary Results
       2. Oversampling ROC Curve
       3. Oversampling Learning Curve
+      
+###### Comparing Model Performances
+![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133528833-e1250107-bd90-4e99-95a0-cc967ffa4432.png)
+![ROC_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133529062-4efccfbe-e089-4e54-9c45-b64b3f68b0c1.png)
+
+
 ##### Dashboard
 [link to dashboard](https://public.tableau.com/shared/SPWRM55MM?:display_count=n&:origin=viz_share_link "link to dashboard") 
 
