@@ -145,8 +145,8 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528102-9d74ac6d-44a0-4bc8-aafe-9c63fc55214c.png)
 
 #### Oversampling Model Results
-      1. Oversampling Summary Results
-      2. Oversampling ROC Curve
+      1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
+      2. The ROC Curve show that the logistic regression had the largest AUC
       3. Oversampling Learning Curve
       
 ###### Comparing Model Performances
