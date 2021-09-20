@@ -119,7 +119,7 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       2. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
       3. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount.
       4. The time feature is distributed across two days
-      5. Bivariate plots of all features, show that the valid transaction class has a normal distribution shape across most of the features.
+      5. Bivariate plots show that the valid transaction class has a normal distribution shape across most of the features.
       6. Conversely, the fraud class show long-tailed distribution across many of the features.
  ##### Univariate Analysis Results    
 ![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
