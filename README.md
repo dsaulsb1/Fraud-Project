@@ -72,17 +72,19 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
       1.	SVM works relatively well when there is a clear margin of separation between classes.
       2.	SVM is effective in high dimensional spaces.
       3.	SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
-      4.	SVM is relatively memory efficient
+      4.	SVM is relatively memory efficient.
 
 =======
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
 
-      1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. The results are presented in an easy and simple manner.
+      1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
+            - The results are presented in an easy and simple manner.
       2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow changes to easily occur on the algorithm.
-      3.	K-means is suitable for many datasets, and it’s computed much faster than the smaller dataset. It can also produce higher clusters.
-      4.	The results are easy to interpret. It generates cluster descriptions in a form minimized to ease understanding of the data.
+      3.	K-means easily scales to large datasets.
+      4.	K-Means returns clusters which can be easily interpreted and even visualized. 
+            - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
       5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
 
 =======
@@ -120,17 +122,26 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 #### Naive Model Results
       1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent transactions. 
-      With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric
+      With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric.
       2. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. 
-      We would need a better understanding of the dataset to determine the best way to improve the recall metric
+      We would need a better understanding of the dataset to determine the best way to improve the recall metric.
       
 ###### Naive Model Results
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
 
+#### The ROC-AUC Curve
+      1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
+      2. ROC is a probability curve that plots True Positives and False Positives
+      3. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
+      4. AUC tells how much the model is capable of distinguishing between classes.
+      5. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+      
+#### The Learning Curve
+
 #### Undersampling Model Results
       1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
       Support vector classifier.
-      2. The ROC Curve show that the Support Vector Classifier has the largest area under the curve
+      2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
       3. Undersampling Learning Curve
       
 ###### Undersampling Results
@@ -138,10 +149,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974457-d0f25b8b-b0ef-412b-9173-547e3080f906.png)
 ![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974490-d26feacf-3707-4d04-8e78-56eb09370ab1.png)
 
-
 #### Oversampling Model Results
       1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
-      2. The ROC Curve show that the logistic regression had the largest AUC
+      2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
       3. Oversampling Learning Curve
       
 ###### Comparing Model Performances
