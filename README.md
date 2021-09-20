@@ -150,11 +150,11 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Learning_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133975015-f1849656-26b9-41d8-84e0-94e078a67c46.png)
 
 
-##### Dashboard
+#### Dashboard
 [Link to Dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "Link to Dashboard") 
 
 
-##### Presentation
+#### Presentation
 [Link to Presentation](https://docs.google.com/presentation/d/1dZFGsjNqBm8g_7548PAecGgwXyDAJgDpwp7bEyCh3jY/edit?usp=sharing "Link to Presentation")
 
 ### Summary
