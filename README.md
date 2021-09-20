@@ -170,7 +170,14 @@ OVERSAMPLING, UNDERSAMPLING, ROC, AND LEARNING CURVE
 1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
 2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
 3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
-      
+
+#### Best Model
+To choose the best model, we may consider the following factors:
+1. Size of the dataset
+2. Recall Score
+3. ROC
+4. Model Training Time
+5. Optimal number of cross validation folds that will result in a good fit
 #### Recommendation
 
 One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
