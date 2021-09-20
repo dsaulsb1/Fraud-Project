@@ -51,7 +51,8 @@ Logistic regression is a classification algorithm used to find the probability o
 ##### Why Logistic Regression
       1.	Logistic regression is easier to implement, interpret, and very efficient to train.
       2.	It makes no assumptions about distributions of classes in feature space.
-      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association (positive or negative).
+      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association 
+      (positive or negative).
       4.	Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
 
 =======
@@ -71,7 +72,8 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
 
       1.	SVM works relatively well when there is a clear margin of separation between classes.
       2.	SVM is effective in high dimensional spaces.
-      3.	SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
+      3.	SVM can be used for other types of machine learning problems, such as regression, 
+      outlier detection, and clustering.
       4.	SVM is relatively memory efficient.
 
 =======
@@ -81,7 +83,8 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
 
       1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
             - The results are presented easily and straightforwardly.
-      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
+      2.	K-means algorithm can easily adjust to the changes. 
+            - If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
       3.	K-means easily scales to large datasets.
       4.	K-Means returns clusters that can be easily interpreted and even visualized. 
             - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
@@ -103,8 +106,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Description of communication protocols
     1. Comminucation for this project will be via a Slack Group Chat.
-    2. Every team member will work in their individual branches and create a pull request which will collectively approved in the slack group chat before a designated member approves the pull request in GitHub
-    3. The designated team member will then create a request to push changes to the main branch
+    2. Every team member will work in their individual branches.
+    3. Team members will create pull requests which will be collectively approved in the slack channel.
+    4. A designated team member will validate the pull request, and merge the request to the main branch.
     
     
 ### Results
