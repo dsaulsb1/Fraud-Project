@@ -103,3 +103,59 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
     1. Comminucation for this project will be via a Slack Group Chat.
     2. Every team member will work in their individual branches and create a pull request which will collectively approved in the slack group chat before a designated member approves the pull request in GitHub
     3. The designated team member will then create a request to push changes to the main branch
+    
+    
+ ### Results
+#### Exploratory Data Analysis
+##### Univariate Analysis:
+      1. Univariate plots show that the dataset is highly imbalanced. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
+      2. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
+      3. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
+ ###### Univariate Analysis     
+![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
+![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
+
+###### Bivariate Analysis
+![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
+
+#### Naive Model Results
+      1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent transactions. 
+      With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric
+      2. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. 
+      We would need a better understanding of the dataset to determine the best way to improve the recall metric
+      
+###### Naive Model Results
+![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
+
+#### Undersampling Model Results
+      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
+      Support vector classifier.
+      2. The ROC Curve show that the Support Vector Classifier has the largest area under the curve
+      3. Undersampling Learning Curve
+      
+###### Undersampling Results
+![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133528075-7bde9aaf-b8a4-406f-9beb-b380112fc004.png)
+![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528096-9d818441-8da0-40fc-aed3-076195b2e5b9.png)
+![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528102-9d74ac6d-44a0-4bc8-aafe-9c63fc55214c.png)
+
+#### Oversampling Model Results
+      1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
+      2. The ROC Curve show that the logistic regression had the largest AUC
+      3. Oversampling Learning Curve
+      
+###### Comparing Model Performances
+![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133528833-e1250107-bd90-4e99-95a0-cc967ffa4432.png)
+![ROC_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133529062-4efccfbe-e089-4e54-9c45-b64b3f68b0c1.png)
+
+
+##### Dashboard
+[link to dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "link to dashboard") 
+
+
+### Summary
+      1. Describe the dataset
+      2. Describe the initial attempt of the naive models
+      3. Describe the results of the undersampling and oversampling
+      4. Describe the ROC curves and the learning curves
+      5. Choose the best model
+#### Recommendation
