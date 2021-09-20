@@ -154,6 +154,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 [link to dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "link to dashboard") 
 
 
+##### Presentation
+[Link to Presentation](https://docs.google.com/presentation/d/1dZFGsjNqBm8g_7548PAecGgwXyDAJgDpwp7bEyCh3jY/edit?usp=sharing "Link to Presentation")
+
 ### Summary
 The Dataset
 1. The dataset used for this project has 284807 rows of credit card transactions. 
