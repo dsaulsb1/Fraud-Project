@@ -134,9 +134,10 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       3. Undersampling Learning Curve
       
 ###### Undersampling Results
-![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133528075-7bde9aaf-b8a4-406f-9beb-b380112fc004.png)
-![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528096-9d818441-8da0-40fc-aed3-076195b2e5b9.png)
-![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133528102-9d74ac6d-44a0-4bc8-aafe-9c63fc55214c.png)
+![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133974705-93c65293-df1e-426d-9e57-2a1e69180ceb.png)
+![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974457-d0f25b8b-b0ef-412b-9173-547e3080f906.png)
+![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974490-d26feacf-3707-4d04-8e78-56eb09370ab1.png)
+
 
 #### Oversampling Model Results
       1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
@@ -144,8 +145,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       3. Oversampling Learning Curve
       
 ###### Comparing Model Performances
-![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133528833-e1250107-bd90-4e99-95a0-cc967ffa4432.png)
-![ROC_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133529062-4efccfbe-e089-4e54-9c45-b64b3f68b0c1.png)
+![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133974960-19bb87bd-9c25-4141-bbcb-815b9d4efc7d.png)
+![ROC_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133974982-e5f61867-5b71-4938-bf86-ba2093008436.png)
+![Learning_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133975015-f1849656-26b9-41d8-84e0-94e078a67c46.png)
 
 
 ##### Dashboard
