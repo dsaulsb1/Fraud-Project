@@ -51,7 +51,8 @@ Logistic regression is a classification algorithm used to find the probability o
 ##### Why Logistic Regression
       1.	Logistic regression is easier to implement, interpret, and very efficient to train.
       2.	It makes no assumptions about distributions of classes in feature space.
-      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association (positive or negative).
+      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association 
+      (positive or negative).
       4.	Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
 
 =======
@@ -72,20 +73,25 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
       1.	SVM works relatively well when there is a clear margin of separation between classes.
       2.	SVM is effective in high dimensional spaces.
       3.	SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
-      4.	SVM is relatively memory efficient
+      4.	SVM is relatively memory efficient.
 
 =======
+
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
 
-      1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. The results are presented in an easy and simple manner.
-      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow changes to easily occur on the algorithm.
-      3.	K-means is suitable for many datasets, and it’s computed much faster than the smaller dataset. It can also produce higher clusters.
-      4.	The results are easy to interpret. It generates cluster descriptions in a form minimized to ease understanding of the data.
-      5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
+      1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
+            - The results are presented easily and straightforwardly.
+      2.	K-means algorithm can easily adjust to the changes. 
+            - If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
+      3.	K-means easily scales to large datasets.
+      4.	K-Means returns clusters that can be easily interpreted and even visualized. 
+            - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
+      5.	Compared to using other clustering methods, a k-means clustering is fast and efficient in terms of its computational cost
 
 =======
+
 PgAdmin Database to store our dataset and some intermediate results
 ##### Database Approach
       1.	Load raw dataset into AWS S3 bucket/PgAdmin
@@ -101,5 +107,107 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Description of communication protocols
     1. Comminucation for this project will be via a Slack Group Chat.
-    2. Every team member will work in their individual branches and create a pull request which will collectively approved in the slack group chat before a designated member approves the pull request in GitHub
-    3. The designated team member will then create a request to push changes to the main branch
+    2. Every team member will work in their individual branches.
+    3. Team members will create pull requests which will be collectively approved in the slack channel.
+    4. A designated team member will validate the pull request, and merge the request to the main branch.
+    
+    
+### Results
+#### Exploratory Data Analysis
+##### Univariate Analysis:
+      1. Univariate plots show that the dataset is highly imbalanced. 
+      2. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
+      3. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
+      4. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a normal distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
+ ##### Univariate Analysis Results    
+![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
+![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
+
+##### Bivariate Analysis
+![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
+
+#### Naive Model Results
+      1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent transactions. 
+      With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric.
+      2. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. 
+      We would need a better understanding of the dataset to determine the best way to improve the recall metric.
+      
+###### Naive Model Results
+![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
+
+#### The ROC-AUC Curve
+      1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
+      2. ROC is a probability curve that plots True Positives and False Positives
+      3. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
+      4. AUC tells how much the model is capable of distinguishing between classes.
+      5. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+      
+#### The Learning Curve
+
+#### Undersampling Model Results
+      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
+      Support vector classifier.
+      2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
+      3. Undersampling Learning Curve
+      
+###### Undersampling Results
+![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133974705-93c65293-df1e-426d-9e57-2a1e69180ceb.png)
+![ROC_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974457-d0f25b8b-b0ef-412b-9173-547e3080f906.png)
+![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974490-d26feacf-3707-4d04-8e78-56eb09370ab1.png)
+
+#### Oversampling Model Results
+      1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
+      2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
+      3. Oversampling Learning Curve
+      
+###### Comparing Model Performances
+![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133974960-19bb87bd-9c25-4141-bbcb-815b9d4efc7d.png)
+![ROC_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133974982-e5f61867-5b71-4938-bf86-ba2093008436.png)
+![Learning_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133975015-f1849656-26b9-41d8-84e0-94e078a67c46.png)
+
+
+#### Dashboard
+[Link to Dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "Link to Dashboard") 
+
+
+#### Presentation
+[Link to Presentation](https://docs.google.com/presentation/d/1dZFGsjNqBm8g_7548PAecGgwXyDAJgDpwp7bEyCh3jY/edit?usp=sharing "Link to Presentation")
+
+### Summary
+The Dataset
+
+      1. The dataset used for this project has 284807 rows of credit card transactions. 
+      2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset with only 0.17% of all transaction being fraud.
+      3. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
+
+Naive Models
+
+      1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
+      both classifiers only managed recall scores of 62% and 77% respectively.
+      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an organization alot of money.
+
+Performance Metrics
+
+      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal.
+      2. To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of True Positives and False Positives
+
+Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
+
+      1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
+      2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
+      3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
+
+#### Best Model
+To choose the best model, we may consider the following factors:
+
+      1. Size of the dataset
+      2. Recall Score
+      3. ROC
+      4. Model Training Time
+      5. Optimal number of cross validation folds that will result in a good fit
+#### Recommendation
+
+      One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
+      * One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 30% faster than the RandomizedGridSearchCV.
+      * We may also explore using an online environment that has unlimited computation resources that can handle the resource requirements for memory and CPU intensive models and processes. 
+      * Since feature extraction had been done on, the dataset, visualizing potentially interesting relationships was not possible with this dataset
