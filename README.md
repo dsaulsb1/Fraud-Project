@@ -80,10 +80,10 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
 ##### Why K-Means Clustering
 
       1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
-            - The results are presented in an easy and simple manner.
-      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow changes to easily occur on the algorithm.
+            - The results are presented easily and straightforwardly.
+      2.	K-means algorithm can easily adjust to the changes. If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
       3.	K-means easily scales to large datasets.
-      4.	K-Means returns clusters which can be easily interpreted and even visualized. 
+      4.	K-Means returns clusters that can be easily interpreted and even visualized. 
             - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
       5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
 
@@ -107,17 +107,18 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
     3. The designated team member will then create a request to push changes to the main branch
     
     
- ### Results
+### Results
 #### Exploratory Data Analysis
 ##### Univariate Analysis:
-      1. Univariate plots show that the dataset is highly imbalanced. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
-      2. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
-      3. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
- ###### Univariate Analysis     
+      1. Univariate plots show that the dataset is highly imbalanced. 
+      2. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
+      3. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values for amount, and the time feature is distributed across two days
+      4. Bivariate plots of all features grouped by transaction class, show that the valid transaction class has a normal distribution shape across most of the features, conversely, the fraud class show long-tailed distribution across many of the features.
+ ##### Univariate Analysis Results    
 ![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
 ![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
 
-###### Bivariate Analysis
+##### Bivariate Analysis
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
@@ -169,22 +170,27 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 ### Summary
 The Dataset
-1. The dataset used for this project has 284807 rows of credit card transactions. 
-2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset with only 0.17% of all transaction being fraud.
-3. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
+
+      1. The dataset used for this project has 284807 rows of credit card transactions. 
+      2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset with only 0.17% of all transaction being fraud.
+      3. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
 
 Naive Models
-1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, both classifiers only managed recall scores of 62% and 77% respectively.
-2. This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an organization alot of money.
+
+      1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
+      both classifiers only managed recall scores of 62% and 77% respectively.
+      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an organization alot of money.
 
 Performance Metrics
-1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal.
-2. To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of True Positives and False Positives
 
-OVERSAMPLING, UNDERSAMPLING, ROC, AND LEARNING CURVE
-1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
-2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
-3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
+      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal.
+      2. To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of True Positives and False Positives
+
+Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
+
+      1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
+      2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
+      3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
 
 #### Best Model
 To choose the best model, we may consider the following factors:
