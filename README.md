@@ -76,6 +76,7 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
       4.	SVM is relatively memory efficient.
 
 =======
+
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
