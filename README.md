@@ -143,10 +143,11 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       3. An ROC curve plots TPR vs. FPR at different classification thresholds.
       4. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives and True Positives. 
       5. Increasing the classification threshold classifies more items as negative, thus increasing both True Negatives and False Negatives.
-      6. The AUC lets us find the optimal AUC based on multiple classification thresholds.
-      7. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
-      8. AUC tells how much the model is capable of distinguishing between classes.
-      9. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+      6. The AUC lets us find the optimal classification threshold that minimizes false positives and false negatives.
+      7. For our credit card classification problem, we would want a classification threshold that increases true positives.
+      8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
+      9. AUC tells how much the model is capable of distinguishing between classes.
+      10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
       
 #### The Learning Curve
 
