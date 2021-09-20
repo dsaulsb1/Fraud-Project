@@ -151,7 +151,7 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 
 ##### Dashboard
-[link to dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "link to dashboard") 
+[Link to Dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "Link to Dashboard") 
 
 
 ##### Presentation
