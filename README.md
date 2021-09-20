@@ -130,9 +130,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 #### Naive Model Results
       1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent transactions. 
-      With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric.
-      2. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. 
-      We would need a better understanding of the dataset to determine the best way to improve the recall metric.
+      2. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to improve the recall metric.
+      3. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 77% recall. 
+      4. We would need a better understanding of the dataset to determine the best way to improve the recall metric.
       
 ###### Naive Model Results
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
