@@ -91,6 +91,7 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
       5.	Compared to using other clustering methods, a k-means clustering technique is fast and efficient in terms of its computational cost
 
 =======
+
 PgAdmin Database to store our dataset and some intermediate results
 ##### Database Approach
       1.	Load raw dataset into AWS S3 bucket/PgAdmin
