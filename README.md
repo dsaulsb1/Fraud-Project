@@ -142,7 +142,7 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       2. ROC is a probability curve that plots True Positives and False Positives
       3. An ROC curve plots TPR vs. FPR at different classification thresholds.
       4. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives and True Positives. 
-      5. Increasing the classification threshold classifies more items as negative, thus increasing both True Negatives and False Negatives.
+      5. Increasing the classification threshold classifies more items as negative, thus increasing both False Negatives and True Negatives.
       6. The AUC lets us find the optimal classification threshold that minimizes false positives and false negatives.
       7. For our credit card classification problem, we would want a classification threshold that increases true positives.
       8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
@@ -150,12 +150,19 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
       
 #### The Learning Curve
+      1. The learning curve is the plot of the training/cross-validation error versus the sample size.
+      2. Learning curves show the relationship between training set size and the recall metric on the training and validation sets.
+      3. The learning curve detects whether the model has the high bias or high variance.
+      4. If the model suffers from high bias problem, as the sample size increases, training error will increase and the cross validation error will decrease.
+      5. Training error and cross-validation error will end up close to each other but still at a high error rate.
+      4. If the model suffers from high variance, as the sample size increases, the training error will keep increasing and cross-validation error will keep decreasing 
+      5. Training error and cross-validation error will end up at a low training and cross-validation error rate.
 
 #### Undersampling Model Results
       1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
       Support vector classifier.
       2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
-      3. Undersampling Learning Curve
+      3. All undersampling curves show a fairly ideal learning curve. As the training size increases, training error and validation error generally reduces and end up at a low rate.
       
 ###### Undersampling Results
 ![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133974705-93c65293-df1e-426d-9e57-2a1e69180ceb.png)
@@ -165,7 +172,8 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 #### Oversampling Model Results
       1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
       2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
-      3. Oversampling Learning Curve
+      3. All oversampling curves show a fairly ideal learning curve. 
+      4. As the training size increases, training error and validation error generally reduces and end up at a low error rate
       
 ###### Comparing Model Performances
 ![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133974960-19bb87bd-9c25-4141-bbcb-815b9d4efc7d.png)
