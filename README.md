@@ -263,12 +263,12 @@ Learning Curve
     best model for this classification problem.
       
 
-#### Recommendation
+#### Challenges and Recommendations
     1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model 
     Cross-Validation scores.
-     i. One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 
+    2. One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 
      30% faster than the RandomizedGridSearchCV.
-     ii. We may also explore using an online environment that has unlimited computation resources that can handle the resource 
+    3. We may also explore using an online environment that has unlimited computation resources that can handle the resource 
      requirements for memory and CPU intensive models  and processes. 
-    2. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not 
+    4. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not 
     possible with this dataset.
