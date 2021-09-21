@@ -166,11 +166,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       5. Training error and cross-validation error will end up at a low training and cross-validation error rate.
 
 #### Undersampling Model Results
-      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception 
-      of the Support vector classifier.
-      2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
-      3. All undersampling curves show a fairly ideal learning curve. 
-      4. As the training size increases, training error and validation error generally reduces and end up at a low rate.
+    1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 
+    85% with the exception of the Support vector classifier.
+    2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree
+    classifier has the smallest AUC
+    3. All undersampling curves show a fairly ideal learning curve. 
+    4. As the training size increases, training error and validation error generally reduces and end up at a low rate.
       
 ###### Undersampling Results
 ![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133974705-93c65293-df1e-426d-9e57-2a1e69180ceb.png)
@@ -178,10 +179,11 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974490-d26feacf-3707-4d04-8e78-56eb09370ab1.png)
 
 #### Oversampling Model Results
-      1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had the best accuracy of 99%
-      2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
-      3. All oversampling curves show a fairly ideal learning curve. 
-      4. As the training size increases, training error and validation error generally reduces and end up at a low error rate
+    1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had 
+    the best accuracy of 99%
+    2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
+    3. All oversampling curves show a fairly ideal learning curve. 
+    4. As the training size increases, training error and validation error generally reduces and end up at a low error rate
       
 ###### Comparing Model Performances
 ![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133974960-19bb87bd-9c25-4141-bbcb-815b9d4efc7d.png)
@@ -257,12 +259,12 @@ AUC-ROC Curve
 Learning Curve
 
     1. The learning curve helps us evaluate whether our model is overfitting, underfitting, or has a good fit.
-    2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the best model for 
-      this classification problem
+    2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the 
+    best model for this classification problem.
       
 
 #### Recommendation
-1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
-   - One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 30% faster than the RandomizedGridSearchCV.
-   - We may also explore using an online environment that has unlimited computation resources that can handle the resource requirements for memory and CPU intensive models and processes. 
-2. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not possible with this dataset.
+      1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
+      - One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 30% faster than the RandomizedGridSearchCV.
+      - We may also explore using an online environment that has unlimited computation resources that can handle the resource requirements for memory and CPU intensive models  and processes. 
+      2. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not possible with this dataset.
