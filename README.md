@@ -219,22 +219,26 @@ Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
 To choose the best model, we may consider the following factors:
 
 Characteristics of the dataset
-1. Since we are dealing with an imbalanced dataset, our first intuition is apply techniques such as undersampling and oversampling
-2. The Random Forest Classifier works well with resampling. 
-3. The Random Forest classifier lets us bootstrap samples, so we take a resample of our training data set. 
-4. And then we rebuild classification or regression trees on each of those bootstrap samples. 
+
+      1. Since we are dealing with an imbalanced dataset, our first intuition is apply techniques such as undersampling and oversampling
+      2. The Random Forest Classifier works well with resampling. 
+      3. The Random Forest classifier lets us bootstrap samples, so we take a resample of our training data set. 
+      4. And then we rebuild classification or regression trees on each of those bootstrap samples. 
 
 Evaluation Metric: Recall Score
-1. Since imbalanced datasets will generally have high accuracy scores, we need a different metric to evaluate model performance.
-2. The choice of model may depend on the recall metric which measures the ratio of of True Positives to the total of True Positives and False Positives
+
+      1. Since imbalanced datasets will generally have high accuracy scores, we need a different metric to evaluate model performance.
+      2. The choice of model may depend on the recall metric which measures the ratio of of True Positives to the total of True Positives and False Positives
 
 AUC-ROC Curve
-1. The AUC-ROC curve helps us determine the optimal classification threshold that minizes False Positives, and False Negatives.
-2. The AUC-ROC curve can be used in addition to the recall metric to select the best model for this classification problem
+
+      1. The AUC-ROC curve helps us determine the optimal classification threshold that minizes False Positives, and False Negatives.
+      2. The AUC-ROC curve can be used in addition to the recall metric to select the best model for this classification problem
 
 Learning Curve
-1. The learning curve helps us evaluate whether our model is overfitting, underfitting, or has a good fit.
-2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the best model for this classification problem
+
+      1. The learning curve helps us evaluate whether our model is overfitting, underfitting, or has a good fit.
+      2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the best model for this classification problem
       
 
 #### Recommendation
