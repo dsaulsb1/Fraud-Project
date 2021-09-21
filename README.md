@@ -200,7 +200,8 @@ Naive Models
 
       1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
       both classifiers only managed recall scores of 62% and 77% respectively.
-      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. This ype of metric would cost an organization alot of money.
+      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. 
+      3. This type of metric would cost an organization alot of money.
 
 Performance Metrics
 
@@ -209,9 +210,10 @@ Performance Metrics
 
 Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
 
-      1. To improve the recall score of the naive models, we employ oversampling and underampling and with these methods, we achieved recall scores greater than 90% for the undersampling method and recall scores greater than 85% for the oversampling method.
-      2. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
-      3. Analysis of the learning curve show that the logistic regression had a good fit. Increasing our cross-validation folds may make the logistic regression have near perfect without overfitting.
+      1. To improve the recall score of the naive models, we employ oversampling and underampling.
+      2. With these methods, we achieved recall scores greater than 90%, and 85% for the undersampling  and oversampling methods respectivelly.
+      3. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
+      4. Analysis of the learning curve show that the logistic regression had a generally good fit.
 
 #### Best Model
 To choose the best model, we may consider the following factors:
@@ -226,4 +228,4 @@ To choose the best model, we may consider the following factors:
       One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
       * One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some cases may be 30% faster than the RandomizedGridSearchCV.
       * We may also explore using an online environment that has unlimited computation resources that can handle the resource requirements for memory and CPU intensive models and processes. 
-      * Since feature extraction had been done on, the dataset, visualizing potentially interesting relationships was not possible with this dataset
+      Since feature extraction had been done on, the dataset, visualizing potentially interesting relationships was not possible with this dataset
