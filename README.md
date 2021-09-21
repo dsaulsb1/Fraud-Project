@@ -208,13 +208,15 @@ Naive Models
 
 Performance Metrics
 
-      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal.
-      2. To capture fraud transactions we would require a classifier that has a high recall metric which is the ratio of of True Positives to the total of True Positives and False Positives
+      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, 
+      measuring model performance with the accuracy metric will not be ideal.
+      2. To capture fraud transactions we would require a classifier that has a high recall metric.
+      3. Recall is the ratio of of True Positives to the total of True Positives and False Positives
 
 Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
 
       1. To improve the recall score of the naive models, we employ oversampling and underampling.
-      2. With these methods, we achieved recall scores greater than 90%, and 85% for the undersampling  and oversampling methods respectivelly.
+      2. With these methods, we achieved recall scores greater than 90%, and 85% for the undersampling and oversampling methods respectivelly.
       3. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
       4. Analysis of the learning curve show that the logistic regression had a generally good fit.
 
