@@ -168,8 +168,8 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 #### Undersampling Model Results
     1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 
     85% with the exception of the Support vector classifier.
-    2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree
-    classifier has the smallest AUC
+    2. The ROC Curve show that the Support Vector Classifier has the largest AUC at 0.979, while the decision tree
+    classifier has the smallest AUC at 0.700
     3. All undersampling curves show a fairly ideal learning curve. 
     4. As the training size increases, training error and validation error generally reduces and end up at a low rate.
       
@@ -179,10 +179,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Learning_Curve_Undersampling](https://user-images.githubusercontent.com/67847583/133974490-d26feacf-3707-4d04-8e78-56eb09370ab1.png)
 
 #### Oversampling Model Results
-    1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier had 
+    1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier
+    had 
     the best accuracy of 99%
-    2. The ROC Curve show that the random forest classifier has the largest AUC while the decision tree classifier has the smallest AUC
-    3. All oversampling curves show a fairly ideal learning curve. 
+    2. The ROC Curve show that the random forest classifier has the largest AUC at 0.987 while the decision tree 
+    classifier has the smallest AUC at 0.692
+    3. All oversampling learning curves show a fairly good fit. 
     4. As the training size increases, training error and validation error generally reduces and end up at a low error rate
       
 ###### Comparing Model Performances
