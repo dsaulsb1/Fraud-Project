@@ -250,7 +250,6 @@ AUC-ROC Curve
       2. The AUC-ROC curve can be used in addition to the recall metric to select the best model for this classification problem
 
 Learning Curve
-
       1. The learning curve helps us evaluate whether our model is overfitting, underfitting, or has a good fit.
       2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the best model for 
       this classification problem
