@@ -159,16 +159,16 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       1. The learning curve is the plot of the training/cross-validation error versus the sample size.
       2. Learning curves show the relationship between training set size and the recall metric on the training and validation sets.
       3. The learning curve detects whether the model has the high bias or high variance.
-      4. If the model suffers from high bias problem, as the sample size increases, training error will increase and the cross-validation 
-      error will decrease.
+      4. If the model suffers from high bias problem, as the sample size increases, training error will increase and the 
+      cross-validation error will decrease.
       5. Training error and cross-validation error will end up close to each other but still at a high error rate.
-      4. If the model suffers from high variance, as the sample size increases, the training error will keep increasing and cross-validation 
-      error will keep decreasing 
+      4. If the model suffers from high variance, as the sample size increases, the training error will keep increasing and 
+      cross-validation error will keep decreasing.
       5. Training error and cross-validation error will end up at a low training and cross-validation error rate.
 
 #### Undersampling Model Results
-      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
-      Support vector classifier.
+      1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception 
+      of the Support vector classifier.
       2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
       3. All undersampling curves show a fairly ideal learning curve. 
       4. As the training size increases, training error and validation error generally reduces and end up at a low rate.
