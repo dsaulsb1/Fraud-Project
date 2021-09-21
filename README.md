@@ -270,4 +270,5 @@ Learning Curve
      30% faster than the RandomizedGridSearchCV.
      ii. We may also explore using an online environment that has unlimited computation resources that can handle the resource 
      requirements for memory and CPU intensive models  and processes. 
-    2. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not possible with this dataset.
+    2. Since feature extraction had been done on the dataset, visualizing potentially interesting relationships was not 
+    possible with this dataset.
