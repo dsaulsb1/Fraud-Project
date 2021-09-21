@@ -208,7 +208,7 @@ Naive Models
 
 Performance Metrics
 
-      1. Since classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, 
+      1. Classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, 
       measuring model performance with the accuracy metric will not be ideal.
       2. To capture fraud transactions we would require a classifier that has a high recall metric.
       3. Recall is the ratio of of True Positives to the total of True Positives and False Positives
