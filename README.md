@@ -199,55 +199,60 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ### Summary
 The Dataset
 
-      1. The dataset used for this project has 284807 rows of credit card transactions. 
-      2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
-      3. Only 0.17% of all transaction are fraudulent.
-      4. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots 
-      show that the genuine transaction class has an approximately normal distribution across all features, 
-      and the fraud class was had a left skewed distribution for many of the features.
+     1. The dataset used for this project has 284807 rows of credit card transactions. 
+     2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
+     3. Only 0.17% of all transaction are fraudulent.
+     4. While a large portion of the features have been anonymized with PCA, univariate and bivariate 
+     distribution plots show that the genuine transaction class has an approximately normal distribution 
+     across all features, and the fraud class was had a left skewed distribution for many of the features.
 
 Naive Models
 
-      1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 84% and 96% respectively, 
-      both classifiers only managed recall scores of 62% and 77% respectively.
-      2. This means that, the classifiers would miss fraud transaction almost 25% of the time. 
-      3. This type of metric would cost an organization alot of money.
+    1. While naive logistic regression and random forest had an accuracy of 100% and a precisions of 
+    84% and 96% respectively, both classifiers only managed recall scores of 62% and 77% respectively.
+    2. This means that, the classifiers would miss fraud transaction almost 25% of the time. 
+    3. This type of metric would cost an organization alot of money.
 
 Performance Metrics
 
-      1. Classifying transactions as fraud or genuine is an anomaly detection problem where only a small fraction are the anomalies, 
-      measuring model performance with the accuracy metric will not be ideal.
-      2. To capture fraud transactions we would require a classifier that has a high recall metric.
-      3. Recall is the ratio of of True Positives to the total of True Positives and False Positives
+    1. Classifying transactions as fraud or genuine is an anomaly detection problem where only a small 
+    fraction are the anomalies, measuring model performance with the accuracy metric will not be ideal.
+    2. To capture fraud transactions we would require a classifier that has a high recall metric.
+    3. Recall is the ratio of of True Positives to the total of True Positives and False Positives
 
 Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
 
-      1. To improve the recall score of the naive models, we employ oversampling and underampling.
-      2. With these methods, we achieved recall scores greater than 90%, and 85% for the undersampling and oversampling methods respectivelly.
-      3. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value (91.5) than the logistic regression classifier with AUC of 92.1.
-      4. Analysis of the learning curve show that the logistic regression had a generally good fit.
+    1. To improve the recall score of the naive models, we employ oversampling and underampling.
+    2. With these methods, we achieved recall scores greater than 90%, and 85% for the undersampling 
+    and oversampling methods respectivelly.
+    3. While recall for random forest was highest at 95.9%, the classifier had a lower AUC value 
+    (91.5) than the logistic regression classifier with AUC of 92.1.
+    4. Analysis of the learning curve show that the logistic regression had a generally good fit.
 
 #### Best Model
 To choose the best model, we may consider the following factors:
 
 Characteristics of the dataset
 
-      1. Since we are dealing with an imbalanced dataset, our first intuition is apply techniques such as undersampling 
-      and oversampling
-      2. The Random Forest Classifier works well with resampling. 
-      3. The Random Forest classifier lets us bootstrap samples, so we take a resample of our training data set. 
-      4. And then we rebuild classification or regression trees on each of those bootstrap samples. 
+    1. Since we are dealing with an imbalanced dataset, our first intuition is apply techniques such as 
+    undersampling and oversampling
+    2. The Random Forest Classifier works well with resampling. 
+    3. The Random Forest classifier lets us bootstrap samples, so we take a resample of our training data set. 
+    4. And then we rebuild classification or regression trees on each of those bootstrap samples. 
 
 Evaluation Metric: Recall Score
 
-      1. Since imbalanced datasets will generally have high accuracy scores, we need a different metric to evaluate model performance.
-      2. The choice of model may depend on the recall metric which measures the ratio of of True Positives to the total of 
-      True Positives and False Positives
+    1. Since imbalanced datasets will generally have high accuracy scores, we need a different metric 
+    to evaluate model performance.
+    2. The choice of model may depend on the recall metric which measures the ratio of of True Positives 
+    to the total of True Positives and False Positives
 
 AUC-ROC Curve
 
-      1. The AUC-ROC curve helps us determine the optimal classification threshold that minizes False Positives, and False Negatives.
-      2. The AUC-ROC curve can be used in addition to the recall metric to select the best model for this classification problem
+    1. The AUC-ROC curve helps us determine the optimal classification threshold that 
+    minimizes False Positives, and False Negatives.
+    2. The AUC-ROC curve can be used in addition to the recall metric to select the best model 
+    for this classification problem
 
 Learning Curve
 
