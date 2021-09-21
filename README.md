@@ -218,11 +218,11 @@ Oversampling, Undersamling, ROC-AUC Curve, and the Learning Curve
 #### Best Model
 To choose the best model, we may consider the following factors:
 
-      1. Size of the dataset
+      1. Characteristics of the dataset
       2. Recall Score
-      3. ROC
+      3. AUC-ROC Curve
       4. Model Training Time
-      5. Optimal number of cross validation folds that will result in a good fit
+      5. The Learning Curve
 #### Recommendation
 
       1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and the model Cross-Validation scores.
