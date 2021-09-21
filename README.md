@@ -80,7 +80,6 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
-
       1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
             - The results are presented easily and straightforwardly.
       2.	K-means algorithm can easily adjust to the changes. 
