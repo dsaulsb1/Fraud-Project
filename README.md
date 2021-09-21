@@ -162,7 +162,8 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
       1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 85% with the exception of the 
       Support vector classifier.
       2. The ROC Curve show that the Support Vector Classifier has the largest AUC, while the decision tree  classifier has the smallest AUC
-      3. All undersampling curves show a fairly ideal learning curve. As the training size increases, training error and validation error generally reduces and end up at a low rate.
+      3. All undersampling curves show a fairly ideal learning curve. 
+      4. As the training size increases, training error and validation error generally reduces and end up at a low rate.
       
 ###### Undersampling Results
 ![Model_Performances_Undersampling](https://user-images.githubusercontent.com/67847583/133974705-93c65293-df1e-426d-9e57-2a1e69180ceb.png)
@@ -194,8 +195,9 @@ The Dataset
       1. The dataset used for this project has 284807 rows of credit card transactions. 
       2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
       3. Only 0.17% of all transaction are fraudulent.
-      4. While a large portion of the features have been anonymized with PCA, 
-      univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
+      4. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots 
+      show that the genuine transaction class has an approximately normal distribution across all features, 
+      and the fraud class was had a left skewed distribution for many of the features.
 
 Naive Models
 
