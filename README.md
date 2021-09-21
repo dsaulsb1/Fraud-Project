@@ -192,8 +192,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 The Dataset
 
       1. The dataset used for this project has 284807 rows of credit card transactions. 
-      2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset with only 0.17% of all transaction being fraud.
-      3. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
+      2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
+      3. Only 0.17% of all transaction are fraudulent.
+      4. While a large portion of the features have been anonymized with PCA, univariate and bivariate distribution plots show that the genuine transaction class has an approximately normal distribution across all features, and the fraud class was had a left skewed distribution for many of the features.
 
 Naive Models
 
