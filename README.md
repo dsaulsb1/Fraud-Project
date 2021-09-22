@@ -49,57 +49,57 @@ The is an imbalanced dataset. The imbalance between classes is compensated using
 ##### Logistic Regression
 Logistic regression is a classification algorithm used to find the probability of event success and event failure. It is used when the dependent variable is binary (0/1, True/False, Yes/No) in nature. It supports categorizing data into discrete classes by studying the relationship from a given set of labelled data. It learns a linear relationship from the given dataset and then introduces a non-linearity in the form of the Sigmoid function.
 ##### Why Logistic Regression
-      1.	Logistic regression is easier to implement, interpret, and very efficient to train.
-      2.	It makes no assumptions about distributions of classes in feature space.
-      3.	It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association 
+    1. Logistic regression is easier to implement, interpret, and very efficient to train.
+    2. It makes no assumptions about distributions of classes in feature space.
+    3. It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association 
       (positive or negative).
-      4.	Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
+    4. Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
 
 =======
 ##### Random Forest
 Random forest is a technique used in modeling predictions and behavior analysis and is built on decision trees. It contains many decision trees representing a distinct instance of the classification of data input into the random forest. The random forest technique considers the instances individually, taking the one with most votes as the selected prediction.
 ##### Why Random Forest
-      1.	It reduces overfitting in decision trees and helps to improve the accuracy
-      2.	It is flexible to both classification and regression problems
-      3.	It works well with both categorical and continuous values
-      4.	It automates missing values present in the data
-      5.	Normalizing of data is not required as it uses a rule-based approach.
+    1. It reduces overfitting in decision trees and helps to improve the accuracy
+    2. It is flexible to both classification and regression problems
+    3. It works well with both categorical and continuous values
+    4. It automates missing values present in the data
+    5. Normalizing of data is not required as it uses a rule-based approach.
 
 =======
 ##### SVM
 While SVMs do a good job recognizing speech, face, and images, they also do a good job at pattern recognition. Pattern recognition aims to classify data based on either a priori knowledge or statistical information extracted from raw data, which is a powerful tool in data separation in many disciplines.
 ##### Why SVM
 
-      1.	SVM works relatively well when there is a clear margin of separation between classes.
-      2.	SVM is effective in high dimensional spaces.
-      3.	SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
-      4.	SVM is relatively memory efficient.
+    1. SVM works relatively well when there is a clear margin of separation between classes.
+    2. SVM is effective in high dimensional spaces.
+    3. SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
+    4. SVM is relatively memory efficient.
 
 =======
 
 K-Means Clustering
 K-means is a centroid-based algorithm, or a distance-based algorithm, where we calculate the distances to assign a point to a cluster. In K-Means, each cluster is associated with a centroid.
 ##### Why K-Means Clustering
-      1.	It is easy to implement k-means and identify unknown groups of data from complex data sets. 
-            - The results are presented easily and straightforwardly.
-      2.	K-means algorithm can easily adjust to the changes. 
-            - If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
-      3.	K-means easily scales to large datasets.
-      4.	K-Means returns clusters that can be easily interpreted and even visualized. 
-            - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
-      5.	Compared to using other clustering methods, a k-means clustering is fast and efficient in terms of its computational cost
+    1. It is easy to implement k-means and identify unknown groups of data from complex data sets. 
+       - The results are presented easily and straightforwardly.
+    2. K-means algorithm can easily adjust to the changes. 
+       - If there are any problems, adjusting the cluster segment will allow quick changes to the algorithm.
+    3. K-means easily scales to large datasets.
+    4. K-Means returns clusters that can be easily interpreted and even visualized. 
+       - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
+    5. Compared to using other clustering methods, a k-means clustering is fast and efficient in terms of its computational cost
 
 =======
 
 PgAdmin Database to store our dataset and some intermediate results
 ##### Database Approach
-      1.	Load raw dataset into AWS S3 bucket/PgAdmin
-      2.	Connect to AWS S3 bucket/PgAdmin and read data into Pandas
-      3.	Load the raw data into a PgAdmin Database Instance located in AWS
-      4.	Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin
-      5.	Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
-      6.	The connection and S3 bucket details are in the Segment_One Jupyter Notebook.
-      7.	A notebook that contains the code of the above steps is part of this repository.
+    1. Load raw dataset into AWS S3 bucket/PgAdmin
+    2. Connect to AWS S3 bucket/PgAdmin and read data into Pandas
+    3. Load the raw data into a PgAdmin Database Instance located in AWS
+    4. Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin
+    5. Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
+    6. The connection and S3 bucket details are in the Segment_One Jupyter Notebook.
+    7. A notebook that contains the code of the above steps is part of this repository.
 
 ##### Data Cleaning and Analysis
 This project will utilize Jupyter notebook and the pandas library to perform data cleaning and analysis
@@ -114,13 +114,13 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ### Results
 #### Exploratory Data Analysis
 ##### Univariate Analysis:
-      1. Univariate plots show that the dataset is highly imbalanced. 
-      2. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
-      3. The univariate distribution plot of the time and amount feature show we have a dataset with some large outlier values 
-      for amount.
-      4. The time feature is distributed across two days
-      5. Bivariate plots show that the valid transaction class has a normal distribution shape across most of the features.
-      6. Conversely, the fraud class show long-tailed distribution across many of the features.
+    1. Univariate plots show that the dataset is highly imbalanced. 
+    2. The pie chart shows an imbalance in the data, with only 0.17% of the total cases being fraudulent.
+    3. The univariate distribution plot of the time and amount feature show we have a dataset with some 
+    large outlier values for amount.
+    4. The time feature is distributed across two days
+    5. Bivariate plots show that the valid transaction class has a normal distribution shape across most of the features.
+    6. Conversely, the fraud class show long-tailed distribution across many of the features.
  ##### Univariate Analysis Results    
 ![Result_Pie_Chart](https://user-images.githubusercontent.com/67847583/133525687-7eb8eac0-35ef-426a-837d-e228442f3d98.png)
 ![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
@@ -129,41 +129,41 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
-      1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent 
-      transactions. 
-      2. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to 
-      improve the recall metric.
-      3. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 
-      77% recall. 
-      4. We would need a better understanding of the dataset to determine the best way to improve the recall metric.
+    1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent 
+    transactions. 
+    2. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to 
+    improve the recall metric.
+    3. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 
+    77% recall. 
+    4. We would need a better understanding of the dataset to determine the best way to improve the recall metric.
       
 ###### Naive Model Results
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
 
 #### The ROC-AUC Curve
-      1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
-      2. ROC is a probability curve that plots True Positives and False Positives
-      3. An ROC curve plots TPR vs. FPR at different classification thresholds.
-      4. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives 
-      and True Positives. 
-      5. Increasing the classification threshold classifies more items as negative, thus increasing both False Negatives 
-      and True Negatives.
-      6. The AUC lets us find the optimal classification threshold that minimizes false positives and false negatives.
-      7. For our credit card classification problem, we would want a classification threshold that increases true positives.
-      8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
-      9. AUC tells how much the model is capable of distinguishing between classes.
-      10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+    1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
+    2. ROC is a probability curve that plots True Positives and False Positives
+    3. An ROC curve plots TPR vs. FPR at different classification thresholds.
+    4. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives 
+    and True Positives. 
+    5. Increasing the classification threshold classifies more items as negative, thus increasing both False Negatives 
+    and True Negatives.
+    6. The AUC lets us find the optimal classification threshold that minimizes false positives and false negatives.
+    7. For our credit card classification problem, we would want a classification threshold that increases true positives.
+    8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
+    9. AUC tells how much the model is capable of distinguishing between classes.
+    10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
       
 #### The Learning Curve
-      1. The learning curve is the plot of the training/cross-validation error versus the sample size.
-      2. Learning curves show the relationship between training set size and the recall metric on the training and validation sets.
-      3. The learning curve detects whether the model has the high bias or high variance.
-      4. If the model suffers from high bias problem, as the sample size increases, training error will increase and the 
-      cross-validation error will decrease.
-      5. Training error and cross-validation error will end up close to each other but still at a high error rate.
-      4. If the model suffers from high variance, as the sample size increases, the training error will keep increasing and 
-      cross-validation error will keep decreasing.
-      5. Training error and cross-validation error will end up at a low training and cross-validation error rate.
+    1. The learning curve is the plot of the training/cross-validation error versus the sample size.
+    2. Learning curves show the relationship between training set size and the recall metric on the training and validation sets.
+    3. The learning curve detects whether the model has the high bias or high variance.
+    4. If the model suffers from high bias problem, as the sample size increases, training error will increase and the 
+    cross-validation error will decrease.
+    5. Training error and cross-validation error will end up close to each other but still at a high error rate.
+    6. If the model suffers from high variance, as the sample size increases, the training error will keep increasing and 
+    cross-validation error will keep decreasing.
+    7. Training error and cross-validation error will end up at a low training and cross-validation error rate.
 
 #### Undersampling Model Results
     1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores greater than 
@@ -180,10 +180,9 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 
 #### Oversampling Model Results
     1. By Oversampling the dataset, we ahieved recall scores greater than 85% for all classifiers. The Random Forest classifier
-    had 
-    the best accuracy of 99%
-    2. The ROC Curve show that the random forest classifier has the largest AUC at 0.987 while the decision tree 
-    classifier has the smallest AUC at 0.692
+    had the best accuracy of 99%
+    2. The ROC Curve show that the random forest classifier has the largest AUC at 0.987 while the decision tree classifier 
+    has the smallest AUC at 0.692
     3. All oversampling learning curves show a fairly good fit. 
     4. As the training size increases, training error and validation error generally reduces and end up at a low error rate
       
@@ -203,12 +202,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ### Summary
 The Dataset
 
-     1. The dataset used for this project has 284807 rows of credit card transactions. 
-     2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
-     3. Only 0.17% of all transaction are fraudulent.
-     4. While a large portion of the features have been anonymized with PCA, univariate and bivariate 
-     distribution plots show that the genuine transaction class has an approximately normal distribution 
-     across all features, and the fraud class was had a left skewed distribution for many of the features.
+    1. The dataset used for this project has 284807 rows of credit card transactions. 
+    2. Exploratory data analysis reveal as expected that we have a highly imbalanced dataset.
+    3. Only 0.17% of all transaction are fraudulent.
+    4. While a large portion of the features have been anonymized with PCA, univariate and bivariate 
+    distribution plots show that the genuine transaction class has an approximately normal distribution across 
+    all features, and the fraud class was had a left skewed distribution for many of the features.
 
 Naive Models
 
