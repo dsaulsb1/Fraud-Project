@@ -49,7 +49,7 @@ The is an imbalanced dataset. The imbalance between classes is compensated using
 #### Solution Workflow
 ![Solution Workflow](https://user-images.githubusercontent.com/67847583/132079416-dbd29ad6-69fd-476b-9138-61d178773ba8.jpg)
 
-#### Technology
+### Technology
 ##### Logistic Regression
 Logistic regression is a classification algorithm used to find the probability of event success and event failure. It is used when the dependent variable is binary (0/1, True/False, Yes/No) in nature. It supports categorizing data into discrete classes by studying the relationship from a given set of labelled data. It learns a linear relationship from the given dataset and then introduces a non-linearity in the form of the Sigmoid function.
 ##### Why Logistic Regression
