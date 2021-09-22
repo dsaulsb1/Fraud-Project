@@ -148,20 +148,19 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Naive_Model_Results](https://user-images.githubusercontent.com/67847583/133527239-4550e302-88ea-4280-87b3-3199f31992f1.png)
 
 #### The ROC-AUC Curve
-    1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
-    2. ROC is a probability curve that plots True Positives and False Positives
-    3. An ROC curve plots TPR vs. FPR at different classification thresholds.
-    4. Lowering the classification threshold classifies more items as positive, thus increasing both 
+    1. ROC is a probability curve that plots True Positives and False Positives at different classification thresholds.
+    2. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
+    3. Lowering the classification threshold classifies more items as positive, thus increasing both 
     False Positives and True Positives. 
-    5. Increasing the classification threshold classifies more items as negative, thus increasing both 
+    4. Increasing the classification threshold classifies more items as negative, thus increasing both 
     False Negatives and True Negatives.
-    6. The AUC lets us find the optimal classification threshold that minimizes False Positives and 
+    5. The AUC lets us find the optimal classification threshold that minimizes False Positives and 
     False Negatives.
-    7. For our credit card classification problem, we would want a classification threshold that increases 
+    6. For our credit card classification problem, we would want a classification threshold that increases 
     True Positives.
-    8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
-    9. AUC tells how much the model is capable of distinguishing between classes.
-    10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
+    7. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
+    8. AUC tells how much the model is capable of distinguishing between classes.
+    9. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
       
 #### The Learning Curve
     1. The learning curve is the plot of the training/cross-validation error versus the sample size.
