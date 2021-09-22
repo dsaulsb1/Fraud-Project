@@ -264,9 +264,11 @@ Evaluation Metric: Recall Score
 
 AUC-ROC Curve
 
-    1. The AUC-ROC curve helps us determine the optimal classification threshold that 
+    1. The ROC curve is a graph showing the performance of a classification model at all classification thresholds. 
+    2. This curve plots two parameters: True Positive Rate and False Positive Rate
+    3. The AUC-ROC curve helps us determine the optimal classification threshold that 
     minimizes False Positives, and False Negatives.
-    2. The AUC-ROC curve can be used in addition to the recall metric to select the best model 
+    4. The AUC-ROC curve can be used in addition to the recall metric to select the best model 
     for this classification problem
 
 Learning Curve
