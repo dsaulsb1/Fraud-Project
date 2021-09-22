@@ -279,8 +279,10 @@ Learning Curve
 #### Challenges and Recommendations
     1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and 
     the model Cross-Validation scores.
+    
     2. One way to to mitigate this challenge in the future may be to use the HalvingGridSearchCV which may in some
     cases may be 30% faster than the RandomizedGridSearchCV.
+    
     3. We may also explore using an online environment that has unlimited computation resources that can handle 
     the resource requirements for memory and CPU intensive models  and processes. 
     
