@@ -76,7 +76,8 @@ While SVMs do a good job recognizing speech, face, and images, they also do a go
 
     1. SVM works relatively well when there is a clear margin of separation between classes.
     2. SVM is effective in high dimensional spaces.
-    3. SVM can be used for other types of machine learning problems, such as regression, outlier detection, and clustering.
+    3. SVM can be used for other types of machine learning problems, such as regression, outlier detection, 
+    and clustering.
     4. SVM is relatively memory efficient.
 
 =======
