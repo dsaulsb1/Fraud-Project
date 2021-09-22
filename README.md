@@ -135,12 +135,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
-    1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting fraudulent 
-    transactions. 
-    2. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine the best way to 
-    improve the recall metric.
-    3. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier only achieved a 
-    77% recall. 
+    1. While the naive logistic classifier accuracy is 100%, our classifier did not do an excellent job at predicting 
+    fraudulent transactions. 
+    2. With precision and recall of 0.84 and 0.62, we would need a better understanding of the dataset to determine 
+    the best way to improve the recall metric.
+    3. While the naive random forest classifier accuracy is 100%, and precision is 95%, our random forest classifier
+    only achieved a 77% recall. 
     4. We would need a better understanding of the dataset to determine the best way to improve the recall metric.
       
 ###### Naive Model Results
@@ -150,12 +150,12 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
     1. AUC - ROC curve is a performance measurement for a classifier at various classification thresholds.
     2. ROC is a probability curve that plots True Positives and False Positives
     3. An ROC curve plots TPR vs. FPR at different classification thresholds.
-    4. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives 
-    and True Positives. 
-    5. Increasing the classification threshold classifies more items as negative, thus increasing both False Negatives 
-    and True Negatives.
-    6. The AUC lets us find the optimal classification threshold that minimizes false positives and false negatives.
-    7. For our credit card classification problem, we would want a classification threshold that increases true positives.
+    4. Lowering the classification threshold classifies more items as positive, thus increasing both 
+    False Positives and True Positives. 
+    5. Increasing the classification threshold classifies more items as negative, thus increasing both 
+    False Negatives and True Negatives.
+    6. The AUC lets us find the optimal classification threshold that minimizes False Positives and False Negatives.
+    7. For our credit card classification problem, we would want a classification threshold that increases True Positives.
     8. AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1).
     9. AUC tells how much the model is capable of distinguishing between classes.
     10. Higher the AUC, the better the model is at predicting 0 classes as 0 and 1 classes as 1.
