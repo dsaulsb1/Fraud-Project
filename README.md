@@ -55,8 +55,8 @@ Logistic regression is a classification algorithm used to find the probability o
 ##### Why Logistic Regression
     1. Logistic regression is easier to implement, interpret, and very efficient to train.
     2. It makes no assumptions about distributions of classes in feature space.
-    3. It not only provides a measure of how appropriate a predictor (coefficient size) is, but also its direction of association 
-      (positive or negative).
+    3. It not only provides a measure of how appropriate a predictor (coefficient size) is, but also 
+    its direction of association (positive or negative).
     4. Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
 
 =======
