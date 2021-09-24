@@ -117,6 +117,11 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
     
     
 ### Results
+#### Database ERD
+Database ERD shows all tables used to store intermediate exploratory data analysis results, and modelling results.
+
+![ERD](https://user-images.githubusercontent.com/67847583/134617701-d906ab9e-1adf-479f-8421-e4635f03a5ed.png)
+
 #### Exploratory Data Analysis
 ##### Univariate Analysis:
     1. Univariate plots show that the dataset is highly imbalanced. 
