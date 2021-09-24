@@ -120,7 +120,7 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
 #### Database ERD
 Database ERD shows all tables used to store intermediate exploratory data analysis results, and modelling results.
 
-![ERD](https://user-images.githubusercontent.com/67847583/134617701-d906ab9e-1adf-479f-8421-e4635f03a5ed.png)
+![Segment_Three_ERD](https://user-images.githubusercontent.com/67847583/134743709-f205ebd5-f2e7-40ca-b6b4-848ab93e1ff4.png)
 
 #### Exploratory Data Analysis
 ##### Univariate Analysis:
