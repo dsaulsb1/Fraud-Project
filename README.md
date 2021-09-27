@@ -209,11 +209,11 @@ Database ERD shows all tables used to store intermediate exploratory data analys
 
 
 #### Dashboard
-[Link to Dashboard](https://public.tableau.com/views/Segment_Two_Dashboard_20210913/FraudDetectionStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link "Link to Dashboard") 
+[Link to Dashboard](https://public.tableau.com/shared/Y2584GGC6?:display_count=n&:origin=viz_share_link "Link to Dashboard") 
 
 
 #### Presentation
-[Link to Presentation](https://docs.google.com/presentation/d/1dZFGsjNqBm8g_7548PAecGgwXyDAJgDpwp7bEyCh3jY/edit?usp=sharing "Link to Presentation")
+[Link to Presentation](https://docs.google.com/presentation/d/1YPocUavsIOVbuCXFfXY8SuM24nU_zGa_/edit?usp=sharing&ouid=110954296916953804309&rtpof=true&sd=true "Link to Presentation")
 
 ### Summary
 The Dataset
