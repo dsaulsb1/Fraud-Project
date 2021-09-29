@@ -137,6 +137,12 @@ Database ERD shows all tables used to store intermediate exploratory data analys
 ![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
 
 ##### Bivariate Analysis
+    1. It is important to note that  the ditribution plots do not have any physical interpretation because the features are extracted from PCA.
+    2. The Bivariate plots show that most of the features are normally distributed for valid transaction class. 
+    3. Conversely, the Fraud Class shows a wider spread as expected.
+    4. Some of the features show a left-skew distribution, while some show a right-skew distribution. 
+
+##### Bivariate Analysis
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
