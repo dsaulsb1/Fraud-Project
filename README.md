@@ -291,3 +291,12 @@ Learning Curve
     can handle the resource requirements for memory and CPU intensive models  and processes.
     4. Since feature extraction had been done on the dataset, visualizing potentially interesting 
     relationships was not possible with this dataset.
+    
+#### Takeaways
+    1. When dealing with an imbalanced dataset, model accuracy is almost always high.
+    2. High model accuracy in an imbalanced dataset does not always translate to a good model
+    3. Depending on the problem at hand precision or recall may be a better metric to measure model peformance.
+    4. Undersampling and Oversampling are two methods that can be used to potentailly increase model performance when we have an imbalanced dataset.
+    5. While recall is a good way to measure our model performance, it is important that we determine our optimum threshold from the AUC-ROC curve
+    6. While we can implement a model with good accuracy and recall score, we want to validate that our model has a good learning experience. 
+    7. We can determine model overfit, underfit or good fit with the ROC curve.
