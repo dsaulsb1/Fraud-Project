@@ -137,6 +137,12 @@ Database ERD shows all tables used to store intermediate exploratory data analys
 ![Univariate_Analysis_Time_Amount_Distribution](https://user-images.githubusercontent.com/67847583/133525463-3a09f744-49c0-4924-9726-2862e5972075.png)
 
 ##### Bivariate Analysis
+    1. It is important to note that  the ditribution plots do not have any physical interpretation because the features are extracted from PCA.
+    2. The Bivariate plots show that most of the features are normally distributed for valid transaction class. 
+    3. Conversely, the Fraud Class shows a wider spread as expected.
+    4. Some of the features show a left-skew distribution, while some show a right-skew distribution. 
+
+##### Bivariate Analysis
 ![Bivariate_Analysis_Distr_Plots](https://user-images.githubusercontent.com/67847583/133525502-4c439bfe-36bc-411f-9f60-f6a026ff7d60.png)
 
 #### Naive Model Results
@@ -208,12 +214,15 @@ Database ERD shows all tables used to store intermediate exploratory data analys
 ![Learning_Curve_Oversampling](https://user-images.githubusercontent.com/67847583/133975015-f1849656-26b9-41d8-84e0-94e078a67c46.png)
 
 
+#### Website
+[Link to Project Website](https://aolayeye.github.io/Machine_Learning_Project_Website/ "Link to Website]") 
+
 #### Dashboard
 [Link to Dashboard](https://public.tableau.com/shared/Y2584GGC6?:display_count=n&:origin=viz_share_link "Link to Dashboard") 
 
 
 #### Presentation
-[Link to Presentation](https://docs.google.com/presentation/d/1YPocUavsIOVbuCXFfXY8SuM24nU_zGa_/edit?usp=sharing&ouid=110954296916953804309&rtpof=true&sd=true "Link to Presentation")
+[Link to Presentation](https://docs.google.com/presentation/d/1f263mkcfClpMU5olLJGY396gpVp0hSiV/edit?usp=sharing&ouid=110954296916953804309&rtpof=true&sd=true "Link to Presentation")
 
 ### Summary
 The Dataset
@@ -291,3 +300,12 @@ Learning Curve
     can handle the resource requirements for memory and CPU intensive models  and processes.
     4. Since feature extraction had been done on the dataset, visualizing potentially interesting 
     relationships was not possible with this dataset.
+    
+#### Takeaways
+    1. When dealing with an imbalanced dataset, model accuracy is almost always high.
+    2. High model accuracy in an imbalanced dataset does not always translate to a good model
+    3. Depending on the problem at hand precision or recall may be a better metric to measure model peformance.
+    4. Undersampling and Oversampling are two methods that can be used to potentailly increase model performance when we have an imbalanced dataset.
+    5. While recall is a good way to measure our model performance, it is important that we determine our optimum threshold from the AUC-ROC curve
+    6. While we can implement a model with good accuracy and recall score, we want to validate that our model has a good learning experience. 
+    7. We can determine model overfit, underfit or good fit with the ROC curve.
