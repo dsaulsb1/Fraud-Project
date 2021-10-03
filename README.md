@@ -66,7 +66,7 @@ Random forest is a technique used in modeling predictions and behavior analysis 
     1. It reduces overfitting in decision trees and helps to improve the accuracy
     2. It is flexible to both classification and regression problems
     3. It works well with both categorical and continuous values
-    4. It automates missing values present in the data
+    4. It automates missing values present in the data.
     5. Normalizing of data is not required as it uses a rule-based approach.
 
 =======
