@@ -63,7 +63,7 @@ Logistic regression is a classification algorithm used to find the probability o
 ##### Random Forest
 Random forest is a technique used in modeling predictions and behavior analysis and is built on decision trees. It contains many decision trees representing a distinct instance of the classification of data input into the random forest. The random forest technique considers the instances individually, taking the one with most votes as the selected prediction.
 ##### Why Random Forest
-    1. It reduces overfitting in decision trees and helps to improve the accuracy
+    1. It reduces overfitting in decision trees and helps to improve the accuracy.
     2. It is flexible to both classification and regression problems.
     3. It works well with both categorical and continuous values.
     4. It automates missing values present in the data.
