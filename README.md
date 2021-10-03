@@ -115,7 +115,6 @@ This project will utilize Jupyter notebook and the pandas library to perform dat
     3. Team members will create pull requests which will be collectively approved in the slack channel.
     4. A designated team member will validate the pull request, and merge the request to the main branch.
     
-    
 ### Results
 #### Database ERD
 Database ERD shows all tables used to store intermediate exploratory data analysis results, and modelling results.
