@@ -44,7 +44,7 @@ This is an imbalanced dataset. The imbalance between classes is compensated usin
       15.	Making predictions on test set and computing validation metrics
       16.	ROC curve and Learning curve
       17.	Comparison of results and Model Selection
-      18.	Visualization with seaborn and matplotlib
+      18.	Visualization with seaborn and matplotlib.
 
 #### Solution Workflow
 ![Solution Workflow](https://user-images.githubusercontent.com/67847583/132079416-dbd29ad6-69fd-476b-9138-61d178773ba8.jpg)
