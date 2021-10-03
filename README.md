@@ -24,7 +24,7 @@ Feature ‘Time’ contains the seconds elapsed between each transaction and the
 
 #### Initial Approach
 
-The is an imbalanced dataset. The imbalance between classes is compensated using oversampling and under sampling. The logistic regression, random forest, support vector machine, k-means are used within a cross-validation framework. Lastly, recall and accuracy are considered as metrics while choosing the best classifier.
+This is an imbalanced dataset. The imbalance between classes is compensated using oversampling and undersampling. The logistic regression, random forest, support vector machine, k-means are used within a cross-validation framework. Lastly, recall and accuracy are considered as metrics while choosing the best classifier.
 
 ### Control Flow
       1.	Understanding the problem
