@@ -188,7 +188,7 @@ Database ERD shows all tables used to store intermediate exploratory data analys
     1. By Undersampling our the majority class in our dataset, all classifiers achieved recall scores 
     greater than 85% with the exception of the Support vector classifier.
     2. The ROC Curve show that the Support Vector Classifier has the largest AUC at 0.979, while the 
-    decision tree classifier has the smallest AUC at 0.700
+    decision tree classifier has the smallest AUC at 0.700.
     3. All undersampling curves show a fairly ideal learning curve. 
     4. As the training size increases, training error and validation error generally reduces and end up
     at a low rate.
