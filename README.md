@@ -102,7 +102,7 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
     2. Connect to AWS S3 bucket/PgAdmin and read data into Pandas.
     3. Load the raw data into a PgAdmin Database Instance located in AWS.
     4. Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin.
-    5. Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin
+    5. Store some intermediate results (which can be used later for visualization) in AWS S3 bucket/PgAdmin.
     6. The connection and S3 bucket details are in the Segment_One Jupyter Notebook.
     7. A notebook that contains the code of the above steps is part of this repository.
 
