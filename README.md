@@ -98,7 +98,7 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
 =======
 
 ##### Database Approach
-    1. Load raw dataset into AWS S3 bucket/PgAdmin
+    1. Load raw dataset into AWS S3 bucket/PgAdmin.
     2. Connect to AWS S3 bucket/PgAdmin and read data into Pandas
     3. Load the raw data into a PgAdmin Database Instance located in AWS
     4. Perform preprocessing steps and store cleaned data in a new table in AWS S3 bucket/PgAdmin.
