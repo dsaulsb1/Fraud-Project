@@ -205,7 +205,7 @@ Database ERD shows all tables used to store intermediate exploratory data analys
     decision tree classifier has the smallest AUC at 0.692
     3. All oversampling learning curves show a fairly good fit. 
     4. As the training size increases, training error and validation error generally reduces and end up at 
-    a low error rate
+    a low error rate.
       
 ###### Comparing Model Performances
 ![Comparing_Model_Results](https://user-images.githubusercontent.com/67847583/133974960-19bb87bd-9c25-4141-bbcb-815b9d4efc7d.png)
