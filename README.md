@@ -93,7 +93,7 @@ K-means is a centroid-based algorithm, or a distance-based algorithm, where we c
     4. K-Means returns clusters that can be easily interpreted and even visualized. 
        - This simplicity makes it highly useful in some cases when you need a quick overview of the data segments.
     5. Compared to using other clustering methods, a k-means clustering is fast and efficient in terms 
-    of its computational cost
+    of its computational cost.
 
 =======
 
