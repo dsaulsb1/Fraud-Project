@@ -290,7 +290,6 @@ Learning Curve
     2. The learning curve can be used in addition to the recall metric, and the AUC-ROC curve to select the 
     best model for this classification problem.
       
-
 #### Challenges and Recommendations
     1. One challenge with this project was computation resources required to run the RandomizedGridSearchCV and 
     the model Cross-Validation scores.
