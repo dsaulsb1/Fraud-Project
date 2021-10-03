@@ -9,7 +9,7 @@ Credit card companies must identify fraudulent credit card transactions so that 
 #### Some challenges of a strict rule-based algorithm include:
 
 =======
-* Any new scenario that could lead to fraud needs to be manually coded into the algorithm
+* Any new scenario that could lead to fraud needs to be manually coded into the algorithm.
 * Increases in customers and size of data leads to a corresponding increase in the human effort, time and cost required to track new scenarios and update the algorithm
 * Since the algorithm cannot go beyond defined rules, it cannot dynamically recognize new scenarios that could result in fraudulent transaction.
 
