@@ -218,7 +218,7 @@ Database ERD shows all tables used to store intermediate exploratory data analys
 [Link to Project Website](https://aolayeye.github.io/Machine_Learning_Project_Website/ "Link to Website]") 
 
 #### Dashboard
-[Link to Dashboard](https://public.tableau.com/shared/Y2584GGC6?:display_count=n&:origin=viz_share_link "Link to Dashboard") 
+[Link to Dashboard](https://aolayeye.github.io/Machine_Learning_Project_Website/machine_learning_dashboard.html "Link to Dashboard") 
 
 
 #### Presentation
